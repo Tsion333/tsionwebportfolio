@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two&family=Pacifico&family=Poiret+One&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Dancing+Script:wght@600&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Dancing+Script:wght@600&family=Fjalla+One&family=Lobster&family=Teko&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+nav{
+   position: fixed;
+   width: 100%;
+   padding: 20px 0;
+   z-index: 998;
+   font-family: 'Poppins', sans-serif;
+   transition: all 0.3 ease;
+}
+nav.sticky{
+    background: lightblue;
+    padding: 13px 0;
+  }
+nav .navbar{
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+nav .navbar .logo a{
+     font-size: 30px;
+     font-weight: 500;
+     color:white;
+
+}
+nav.sticky .navbar .logo a{
+    color: #fff;
+  }
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav .navbar .menu li{
+    margin: 0 8px;
+    list-style: none; 
+}
+.navbar .menu a{
+   font-size: 18px;
+   font-size: 500;
+   color:white;
+   padding: 6px 0;
+   transition: all 0.3 ease;
+}
+.navbar .menu a:hover{
+    color:lightblue;
+}
+nav.sticky .menu a{
+    color: #FFF;
+}
+nav.sticky .menu a:hover{
+    color: #0E2431;
+}
+.navbar .media-icons a{
+    font-size: 18px;
+    margin: 0 6px;
+    color: white;
+}
+nav.sticky .media-icons a{
+    color: #FFF;
+}
+  
+/*side navigation buttn*/
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+    position: absolute;
+    color: aliceblue;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+nav .menu-btn{
+    color: aliceblue;
+}
+nav.sticky .menu-btn{
+    color: #FFF;
+ }
+.navbar .menu .menu-btn{
+    color: #fff;
+}
+  
+/*Home section*/
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url(images/background1.jpg) no-repeat center center/cover;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    font-family: 'Abril Fatface', cursive;
+}
+.home .home-content{
+    height: 100%;
+    width:90%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.home .text .text-one{
+    font-size: 25px;
+}
+.home .text .text-two{
+    font-size: 75px;
+    font-weight: 600;
+    color: lightblue;
+}
+.home .text .text-three{
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+
+}
+.home .text .text-four{
+    font-size: 23px;
+    color: lightgray;
+
+}
+.home .button{
+    margin: 14px 0;
+}
+.home .button button{
+    outline:none;
+    color: darkslategray;
+    background: lightblue;
+    font-size: 20px;
+    padding: 8px 16px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius:5px;
+    transition: all 0.4 ease;
+}
+.home .button button:hover{
+    color: lightblue;
+    background-color: darkslategray;
+    border-color: lightblue;
+}
+
+
+/*about me section*/
+section{
+    padding-top: 40px;
+  }
+section .content{
+    width: 80%;
+    margin: 40px auto;
+    font-family: 'Poppins', sans-serif;
+  }
+.about .about-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about-details .left{
+    width: 45%;
+}
+.about .left img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about-details .right{
+    width: 75%;
+}
+section  .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+  .about-details .right p{
+    text-align: justify;
+    color: #0E2431;
+}
+
+/*myskill*/
+.skill{
+    background: #346B6D;
+}
+.skills .content{
+    padding: 0.5px;
+}
+.skills .topic{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    padding-bottom: 8px;
+}
+.skills .left{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*circle bar plugin*/
+.mh-skills .mh-professional-skill{
+    padding-right: 60px;
+    color: white;
+}
+.mh-skills .mh-professional-skills .title{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family:'Poppins',sans-serif;
+}
+.mh-professional-progress li{ 
+    display: inline-block;
+    margin:0 auto;
+    float: none;
+    width:18%;
+    margin-top:50px;
+    margin-bottom: 30px; 
+    text-align: center;
+}
+.mh-progress{
+    margin-bottom: 10px;
+    font:900 1.14285/1 Cinzerl, cursive;
+    color: white;
+}
+.mh-progress .progressbar-text{
+    color: inherit !important;
+    font-family: 'Poppins',sans-serif;
+}
+.progress.progress-line{
+    height: 5px;
+    margin-right: 10px;
+
+}
+.progress.progress-line .progress-text{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 60px;
+    transform: translateY(-35%);
+    text-align: right;
+    font-family: 'Poppins',sans-serif;
+}
+.mh-progress.mh-progress-circle{
+    display:inline-block;
+    width:100px;
+    height: 100px;
+}
+.mh-progress path:ntn-child(1){
+    stroke: lightblue;
+}
+.mh-progress path:ntn-child(2){
+    stroke: lightblue !important;
+}
+ .candidatos{
+     position: relative;
+     margin-bottom: 15px;
+ }
+/*portfolio*/
+.portfolio{
+    display:flex;
+    flex-direction: column;
+    padding: 50px;
+    font-family:'Poppins',sans-serif;
+
+}
+.portfolio .headings{
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top:50px;
+    margin-bottom: 30px; 
+}
+section .headings span{
+    color: #0E2431;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+.portfolio .headings span::before,
+.portfolio .headings span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: black;
+  left: 0;
+  bottom: 0;
+}
+.portfolio .headings span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+/* Contact Me CSS */
+.contact{
+    background: lightblue;
+  }
+  .contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: white;
+  }
+ /*contactme/* 
+/* Style inputs with type="text", select elements and textareas */
+.contact{
+    padding: 100px;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical ;
+  }
+input[type=submit] {
+    background-color:rgb(13, 111, 143);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #73b8f1;
+}  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/* bring navigation bar to the center  */
+@media (max-width: 1185px){
+    .about .content{
+        width:110%;
+    }
+}
+@media (max-width: 818px){
+    .about .about-details .left img{
+        height: 300px;
+        width: 400px;
+}
+@media(max-width: 1085px) {
+    .about .about-details{
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .about .about-details .right{
+        width:85%;
+        margin: 40px 0;
+    }
+}
+
+
+@media (max-width: 831px){
+    .mh-professional-progress li{ 
+            width:10%;
+            flex-direction: column;
+            display: flex;
+}
+}
+
+
+@media (max-width: 750px ){
+ nav .navbar{
+        width: 90%;
+    }
+nav .navbar .menu{
+        position: absolute;
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        max-width: 400px;
+        width: 100%;
+        background: rgb(26, 25, 25);
+        padding-top: 60px;
+        flex-direction: column;
+        align-items: center;
+}
+.navbar .media-icons a{
+        font-size: 23px;
+        color: azure;
+        display: none; 
+}
+.navbar.active .menu{
+         left: 0;
+    }
+.navbar .menu a{
+        display: block;
+        margin: 10px 0;
+        color: azure;
+        font-size: 23px;
+ }
+nav.sticky .menu a:hover{
+        color: lightblue;
+}
+ nav .navbar .media-icons{
+        display: none;
+    } 
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+        display: block;
+}
+.home .text-two{
+        font-size: 65px;
+}
+.home .text-three{
+        font-size: 35px;
+}
+.skills .skills-details{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.skills-details .text{
+        width: 100%;
+        margin-bottom: 50px;
+}
+.contact .text{
+        width: 100%;
+}
+}
+@media (max-width:510px){
+    .home .text .text-two{
+        font-size: 55px;
+    }
+    .home .text .text-three{
+        font-size: 29px;
+    }
+}

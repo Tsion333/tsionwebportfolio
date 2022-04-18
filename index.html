@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #68A7AC">
+    <nav>
+    <div class="navbar">
+        <div class="logo"><a href="#">Web Portfolio</a></div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+        </ul>
+        <div class="media-icons">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+
+<!--home section start-->
+ <section class="home" id="home">
+  <div class="home-content">
+      <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Tsion Tesfaye</div>
+          <div class="text-three">Full-Stack Developer and a Photography Enthusiast</div>
+          <div class="text-four">From Addis Ababa,ASTU</div>
+</div>
+<div class="button">
+    <button>Download CV</button>
+
+</div>
+ </section>
+ 
+<!--section start-->
+<section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+    <div class="about-details">
+      <div class="left">
+        <img src="images/about.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="topic"><b>Programming Is My Passion & Nuts About Photography</b></div>
+        <p>I am a third year student currently learning at Adama Science and Technology. Although I am a full time student I also have a huge interest in photography and hope to do it part time or stick to having it as one of my best hobbies.</p>
+       </div>
+      </div>
+     </div>
+  </section>
+
+  <!--My Skill section -->
+<section class="skills" id="skills">
+    <div class="content"></div>
+    <div class="col-sm-12 col-md-6">
+        <div class="title"><span>My Skills</span></div>
+        <div class="left">
+            <div class="topic"><b>Knowledge is vast and unending</b></div>
+            <p>I have skills in the given programming languages,I am also eager to learn and expand my knowledge on programming to perfect my skill set.
+                I am a Full-Stack developer meaning I work on both Front-End and Back-End aspects. I especially exceed at Front-End because of my photography background or skill.
+            </p>
+            
+        <ul class="mh-professional-progress">
+            <li>
+                <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                <div class="pr-skill-name">Java</div>
+            </li>
+            <li>   
+                <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                <div class="pr-skill-name">HTML</div>
+            </li>
+            <li>
+                <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                <div class="pr-skill-name">CSS</div>
+            </li>
+            <li>
+                <div class="mh-progress mh-progress-circle" data-progress="75"></div>
+                <div class="pr-skill-name">JavaScript</div>
+            </li>
+            <li>
+                <div class="mh-progress mh-progress-circle" data-progress="50"></div>
+                <div class="pr-skill-name">Database</div>
+            </li>
+        </ul> 
+</section>
+<!--portfolio section-->
+<section class="portfolio" id="portfolio">
+<h1 class="headings"><span>My Portfolio</span></h1>
+<p>These are some of my work in photography and web development.</p>
+<div class="gallery">
+    <img src="images/portfolio.jpg" alt="">
+    <img src="images/portfolio1.jpg" alt="">
+    <img src="images/portfolio2.jpg" alt="">
+    <img src="images/portfolio3.jpg" alt="">
+    <img src="images/portfolio4.jpg" alt="">
+    <img src="images/portfolio5.jpg" alt="">
+    <img src="images/portfolio6.jpg" alt="">
+    <img src="images/portfolio7.jpg" alt="">
+    <img src="images/portfolio8.jpg" alt="">
+</div>
+</section>
+
+<!-- contactme -->
+<section class="contact" id="contact">
+    <div class="title"><span>Contact Me</span></div>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="ethiopia">Ethiopia</option>
+        <option value="kenya">Kenya</option>
+        <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+  </div>
+  </section>
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"> </script>
+<script src="circle-progress.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
